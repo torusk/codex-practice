@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codex Practice — モダンなLP</title>
+    <meta name="description" content="Codexで全面生成・運用する、モダンでミニマルなランディングページ。" />
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta property="og:title" content="Codex Practice — モダンなLP" />
+    <meta property="og:description" content="Codexで全面生成・運用する、モダンでミニマルなランディングページ。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/torusk/codex-practice" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="#"><img src="/favicon.svg" alt="Codex" /> Codex Practice</a>
+        <nav class="nav">
+          <a href="#features">特徴</a>
+          <a href="#how">使い方</a>
+          <a href="#cta" class="btn btn-primary">はじめる</a>
+        </nav>
+        <button class="menu" id="menu" aria-label="メニュー">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <h1>
+            コードも文章も、
+            <span class="accent">Codex</span>で一気に。
+          </h1>
+          <p class="lead">
+            このサイトはエージェント的コーディングアシスタント「Codex」によって全面生成・更新されています。
+            ミニマムな構成で、速く、美しく。
+          </p>
+          <div class="actions">
+            <a href="#cta" class="btn btn-primary">今すぐ始める</a>
+            <a href="#features" class="btn btn-ghost">特徴を見る</a>
+          </div>
+          <div class="hero-card glass" role="img" aria-label="プレビュー">
+            <pre><code>$ npm start
+Server listening on http://localhost:3000
+GET / → "Hello from Codex"</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container grid">
+          <div class="card reveal">
+            <h3>ゼロ依存</h3>
+            <p>追加のライブラリ不要。すぐに動く軽量な構成。</p>
+          </div>
+          <div class="card reveal">
+            <h3>高速</h3>
+            <p>静的アセットとシンプルなサーバーで素早く応答。</p>
+          </div>
+          <div class="card reveal">
+            <h3>拡張容易</h3>
+            <p>セクション追加やスタイル調整も数行でOK。</p>
+          </div>
+          <div class="card reveal">
+            <h3>Codex駆動</h3>
+            <p>改修～PR作成～マージまでエージェントが自動化。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section alt">
+        <div class="container two-col">
+          <div>
+            <h2>セットアップは1コマンド</h2>
+            <ol>
+              <li>リポジトリをクローン</li>
+              <li><code>npm start</code> で起動</li>
+              <li>ブラウザで <code>http://localhost:3000</code></li>
+            </ol>
+          </div>
+          <div class="glass note">
+            <p class="muted">必要に応じて GitHub Pages にもそのまま配置可能です。</p>
+            <p class="muted">LPのテキストや配色は <code>public/styles.css</code> で調整できます。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <div class="container">
+          <h2>今すぐ Codex と始めよう</h2>
+          <p class="lead">改修アイデアを伝えるだけ。あとは Codex がやります。</p>
+          <a class="btn btn-primary btn-lg" href="https://github.com/torusk/codex-practice" target="_blank" rel="noreferrer">GitHub で見る</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© Codex Practice</span>
+        <span class="muted">Built by Codex</span>
+      </div>
+    </footer>
+
+    <script src="/script.js" type="module"></script>
+  </body>
+  </html>
+
